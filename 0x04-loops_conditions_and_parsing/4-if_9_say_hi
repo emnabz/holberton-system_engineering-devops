@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#using while loop
+COUNTER=1
+while [ $COUNTER -le 10 ];
+do
+echo "Holberton School"    
+if [ $COUNTER -eq 9 ]; then
+echo "Hi"
+fi
+COUNTER=$(( "$COUNTER" + 1 ))
+done
