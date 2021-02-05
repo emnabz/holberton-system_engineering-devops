@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#using while loop and head command
+h=0
+m=1
+while [ "$h" -le 12 ] && [ "$m" -le 59 ];
+do
+if [ $m -eq 1 ]
+then
+echo "Hour: $h"
+fi
+echo "$m"
+if [ $m -eq 59 ]
+then
+m=1
+h=$(( h + 1 ))
+else
+m=$(( m + 1 ))
+fi    
+done
