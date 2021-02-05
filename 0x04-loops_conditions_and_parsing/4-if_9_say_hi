@@ -8,5 +8,5 @@ if [ "$COUNTER" -eq 9 ];
 then
 echo "Hi"
 fi
-COUNTER=$(( "COUNTER" + 1 ))
+COUNTER=$(( COUNTER + 1 ))
 done
