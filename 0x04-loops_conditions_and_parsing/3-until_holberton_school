@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#using until loop
+COUNTER=1
+until [ $COUNTER -gt 10 ]
+do
+echo Holberton School
+COUNTER=$(( COUNTER+1 ))
+done
