@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Make a copy of your 6-stop_me_if_you_can script
+trap "echo 'I am invincible!!!'" SIGTERM
+while true; do
+      echo "To infinity and beyond"
+      sleep 2
+done
