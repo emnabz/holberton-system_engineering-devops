@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# 4 parameters that transfers a file from our client to a server
+the path to the file =$1
+the IP of the server=$2
+the username=$3
+the path to SSH private key(scp)=$4
+if [[ $# -lt 3 ]]
+then
+    echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+fi
+scp -o StrictHostKeyChecking=no -i "$pathprivate" "$pathtofile" "$user"@"$IP":~/
