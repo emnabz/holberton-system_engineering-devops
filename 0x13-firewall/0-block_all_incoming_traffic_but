@@ -1,0 +1,3 @@
+sudo ufw default deny incoming
+sudo ufw allow proto tcp from any port 80,443,22
+sudo ufw enable
